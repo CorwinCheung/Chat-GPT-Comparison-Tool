@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>ChatGPT Comparison Tool </title>
+<meta http-equiv="content-language" content="en-us" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="Author Name Goes Here" />
+<meta name="design" content="Sadhana Ganapathiraju" />
+<meta name="copyright" content="Copyright Goes Here" />
+<meta name="description" content="Description Goes Here" />
+<meta name="keywords" content="And, Finally, Keywords Go Here." />
+<link rel="start" title="Home" />
+<link rel="stylesheet" type="text/css" media="screen" href="screen.css" />
+</head>
+<body id="babout">
+<div id="header">
+  <h1>ChatGPT Comparision</h1>
+</div>
+<!-- <div id="navigation">
+  <ul>
+    <li id="lhome"><a href="#00">Home</a></li>
+    <li id="lproducts"><a href="#01">Products</a></li>
+    <li id="lsolutions"><a href="#02">Solutions</a></li>
+    <li id="lmysterious"><a href="#03">Mysterious</a></li>
+    <li id="labout"><a href="#04">About Us</a></li>
+    <li id="lcontact"><a href="#05">Contact Us</a></li>
+  </ul>
+</div> -->
+<div id="wrapper">
+  <div id="content-wrapper">
+    <div id="content">
+      <div id = "question">
+        <h4> Question</h4>
+        <textarea id="question" name="question" rows="2" cols="110">
+  Enter the question asked here.
+        </textarea>
+      </div>
+      <br><br><br>
+      <h4>Student's Answer</h4>
+      <textarea id="answer" name="answer" rows="20" cols="110">
+  Enter the student's answer here.
+        </textarea>
+      </div>
+      <input type="button" value="Submit" class = "right">
+  </div>
+  <div id="sidebar-wrapper">
+    <div id="sidebar">
+      <h3>Results</h3>
+      <ul>
+        <li>Average similarity to GPT 3.5 generated responses: .71</li>
+        <br>
+        <li>Similarity to first GPT 3.5 generated response: .65</li>
+        <br>
+        <li>Similarity to second GPT 3.5 generated response: .76</li>
+        <br>
+        <li>Similarity to third GPT 3.5 generated response: .72</li>
+      </ul>
+      <h3>Most similar GPT 3.5 generated response</h3>
+      <ol>
+        <li>Ulysses S. Grant was a United States military officer and politician who served as the 18th President of the United States from 1869 to 1877. Born in Ohio, Grant graduated from the United States Military Academy at West Point in 1843 and served in the Mexican-American War. After the war, he held various posts in the military and eventually became the Commanding General of the United States Army during the Civil War.
+          As Commanding General, Grant was instrumental in leading the Union Army to victory over the Confederacy. He is perhaps most famous for his decisive victory over Confederate General Robert E. Lee at the Battle of Appomattox Court House in 1865, which effectively ended the Civil War and led to the surrender of the Confederate Army.
+          Grant's presidency was not without controversy, however. He faced criticism for his handling of the aftermath of the Civil War and for his administration's involvement in several scandals. Despite these challenges, Grant is generally well-regarded for his leadership during the Civil War and his efforts to reunify the country after the conflict.        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <p>
+    This comparison tool works by taking an input of the question asked on the test and the student answer. <br>
+    It then queries the OpenAI API text completition GPT 3.5 model, 3 times with different temperatures with the question and the clause "X" number of words, <br>
+    so it generates a response similar to the length of the student's. Then it uses the TF-IDF(term frequency-inverse document frequency) vectors and cosine similarity to <br>
+    compute the similarity of the students answers to the three GPT 3.5 model's outputs. <br>
+    Email <a href = "mailto: corwintcheung@gmail.com">Corwin Cheung</a> with any questions or feedback! <br>
+  </p>
+
+  </div>
+</body>
+</html>

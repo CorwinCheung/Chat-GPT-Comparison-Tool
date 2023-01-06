@@ -29,38 +29,34 @@
 <div id="wrapper">
   <div id="content-wrapper">
     <div id="content">
-      <div id = "question">
         <h4> Question</h4>
         <textarea id="question" name="question" rows="2" cols="110">
-  Enter the question asked here.
-        </textarea>
-      </div>
+  Enter the question asked here.</textarea>
       <br><br><br>
       <h4>Student's Answer</h4>
       <textarea id="answer" name="answer" rows="20" cols="110">
-  Enter the student's answer here.
-        </textarea>
+  Enter the student's answer here.</textarea>
+        <br><br><br>
+      <input type = "button" value = "Submit" class = "right" onclick = "questionAnswer()">
+      <script src="main.js"></script>
       </div>
-      <input type="button" value="Submit" class = "right">
   </div>
   <div id="sidebar-wrapper">
     <div id="sidebar">
       <h3>Results</h3>
       <ul>
-        <li>Average similarity to GPT 3.5 generated responses: .71</li>
+        <li>Average similarity to GPT 3.5 generated responses: ??</li>
         <br>
-        <li>Similarity to first GPT 3.5 generated response: .65</li>
+        <li>Similarity to first GPT 3.5 generated response: ??</li>
         <br>
-        <li>Similarity to second GPT 3.5 generated response: .76</li>
+        <li>Similarity to second GPT 3.5 generated response: ??</li>
         <br>
-        <li>Similarity to third GPT 3.5 generated response: .72</li>
+        <li>Similarity to third GPT 3.5 generated response: ??</li>
       </ul>
       <h3>Most similar GPT 3.5 generated response</h3>
-      <ol>
-        <li>Ulysses S. Grant was a United States military officer and politician who served as the 18th President of the United States from 1869 to 1877. Born in Ohio, Grant graduated from the United States Military Academy at West Point in 1843 and served in the Mexican-American War. After the war, he held various posts in the military and eventually became the Commanding General of the United States Army during the Civil War.
+        <p id = "response">Ulysses S. Grant was a United States military officer and politician who served as the 18th President of the United States from 1869 to 1877. Born in Ohio, Grant graduated from the United States Military Academy at West Point in 1843 and served in the Mexican-American War. After the war, he held various posts in the military and eventually became the Commanding General of the United States Army during the Civil War.
           As Commanding General, Grant was instrumental in leading the Union Army to victory over the Confederacy. He is perhaps most famous for his decisive victory over Confederate General Robert E. Lee at the Battle of Appomattox Court House in 1865, which effectively ended the Civil War and led to the surrender of the Confederate Army.
-          Grant's presidency was not without controversy, however. He faced criticism for his handling of the aftermath of the Civil War and for his administration's involvement in several scandals. Despite these challenges, Grant is generally well-regarded for his leadership during the Civil War and his efforts to reunify the country after the conflict.        </li>
-      </ol>
+          Grant's presidency was not without controversy, however. He faced criticism for his handling of the aftermath of the Civil War and for his administration's involvement in several scandals. Despite these challenges, Grant is generally well-regarded for his leadership during the Civil War and his efforts to reunify the country after the conflict.        </p>
     </div>
   </div>
 </div>
